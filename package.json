@@ -1,0 +1,29 @@
+{
+  "name": "babel-plugin-transform-jsxspreadchild",
+  "version": "7.0.0",
+  "description": "Add SpreadChild support for ReactJSX",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "babel-node test/index.js",
+    "prepublish": "yarn run build"
+  },
+  "dependencies": {
+    "@babel/helper-plugin-utils": "^7",
+    "@babel/plugin-syntax-jsx": "^7.2.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7",
+    "@babel/core": "^7",
+    "@babel/node": "^7",
+    "@babel/plugin-transform-react-jsx": "^7",
+    "@babel/preset-env": "^7"
+  }
+}
